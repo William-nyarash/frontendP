@@ -10,3 +10,13 @@ community can listen to helpful insights on the go.
 
 
 ![home screenshot](https://github.com/William-nyarash/mental_health_platform/blob/main/src/assets/screen.png)
+
+
+## Meet the team
+
+Through this project  we had an amaizing journey from understanding our various background, intrests, idealogy to mention just a few
+Proudly brought to you by:
+- waren
+- steve
+- moses
+
