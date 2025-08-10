@@ -1,0 +1,43 @@
+:root {
+    --color-light:lightgray;
+    --color-dark: rgb(45, 43, 43);
+}
+*,
+*::before,
+*::after {
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: .2em;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    width:1.5rem;
+    height: 1.5rem;
+    margin:.5em;
+    border-radius: 50%;
+    background-color:var(--color-light);
+    animation:faded infinite alternate 1s;
+}
+
+@keyframes faded {
+    from   {
+        background-color: var(--color-light);
+    }
+    to {
+        background-color: var(--color-dark);
+        height: 1.6rem;
+        width:1.6rem;
+    }
+}
