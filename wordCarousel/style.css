@@ -1,0 +1,46 @@
+:root {
+    --bg-color:#5134ff;
+}
+*::before,
+*::after,
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h2::after {
+    content: " ";
+    animation: 5.5s carousel infinite;
+    margin-left: .2em;
+    padding: .6em .8em;
+    border-radius: 12px;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: #c6c0c5;
+}
+
+@keyframes carousel {
+    0% {
+        content: "reading";
+    }
+    25%{
+         content: "coding";
+    }
+    50% {
+         content: "singing";
+    }
+    75%{
+         content: "lala nattion";
+    }
+    100% {
+        content: "reading";
+    }
+}
