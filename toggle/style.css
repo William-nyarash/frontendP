@@ -1,0 +1,49 @@
+:root {
+
+	--toggle-w: 100px;
+    	--toggle-switch-bg: #232428;
+    	--toggle-border: #232428;
+    	--toggle-bg: #fff;
+	--toggle-h: 40px;
+}
+
+body,
+html {
+	box-sizing:border-box;
+	margin:0;
+	background-color: #ced0e2;
+}
+
+
+
+.main {
+	display: flex;
+	min-height:100vh;
+	justify-content:center;
+	align-items:center;
+}
+label {
+	width:var(--toggle-w);
+	height:var(--toggle-h);
+	border: 3px solid var(--toggle-border);
+	border-radius: 40px;
+	display: flex;
+	padding: 0.25em;
+	background-color:var(--toggle-bg);
+	align-items: center;
+}
+.toggle-input {
+	display:none;
+}
+
+.toggle-btn {
+	width: calc(var(--toggle-h) - 4px);
+	height: calc(var(--toggle-h) - 4px);
+	background-color: var(	--toggle-switch-bg);
+	border-radius:50%;
+	transition: all .5s;
+}
+
+.toggle-input:checked ~ .toggle-btn {
+	transform: translateX(calc(var(--toggle-w) - 37px));
+}
