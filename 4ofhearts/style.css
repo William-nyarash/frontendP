@@ -1,0 +1,40 @@
+*::after,
+*::before,
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --card-height:200px;
+}
+.container {
+    display:flex;
+    justify-content: center;
+    margin: 2em auto;
+}
+.card {
+    border: 1px solid black;
+    height:var(--card-height);
+    width: calc(var(--card-height) * 2/3);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    color: red;
+    padding: .3em;
+}
+
+
+
+.middle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 2rem;
+}
+.right {
+    transform: rotate(180deg);
+}
